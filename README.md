@@ -1,10 +1,10 @@
 # scheduler
 
-*Project* *1*: *Implementing* Algorithm*
+*Project* *1*: *Implementing* *Algorithm*
 *Fall* *2023*   *CPSC* *335.01* - *Algorithm* *Engineering*
 *Instructor: Divyansh Mohan Rao* 
 
-##Abstract
+## Abstract
 Develop a pseudocode for an algorithm; analyze your pseudocode mathematically; implement the code for the algorithm of your choice; test your implementation; and describe your results.
 The Problem:  Matching Group Schedules
 The group schedule matching takes two or more arrays as input. The arrays represent slots that are already booked and the login/logout time of group members. It outputs an array containing intervals of time when all members are available for a meeting for a minimum duration expected.

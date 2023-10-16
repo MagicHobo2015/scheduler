@@ -1,0 +1,10 @@
+inputs: busyschedule, workingPeriod, Duration
+
+start with working period, keep the latest start time, and the earliest stop
+
+freetime = range(startTime, Endtime, duration)
+
+for person in schedules:
+    for block in person:
+        remove each block of time from freetime.
+return freetime,
