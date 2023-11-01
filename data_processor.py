@@ -130,5 +130,17 @@ class PersonDataProcessor:
                 free_gap_start += meeting_duration
 
         return schedule_gaps
+
+    def calculate_free_time_intervals_for_all(self, meeting_duration):
+        free_time_intervals = {}
+
+        for key in self.person_data:
+            if key.endswith("_Schedule"):
+                person_name = key.replace("_Schedule", '')  # Extract the person's name
+                intervals = self.calculate_free_time_intervals(person_name, meeting_duration)
+                free_time_intervals[key] = intervals
+
+        return free_time_intervals
+
     def get_person_data(self):
         return self.person_data
