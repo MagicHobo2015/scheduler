@@ -15,11 +15,20 @@ data_processor.filter_strays()
 meeting_duration = 30  # Change this to your desired meeting duration
 
 
-# when i call this it is empty
-free_intervals = data_processor.calculate_free_time_intervals('person1', meeting_duration)
+free_time = data_processor.calculate_free_time_intervals_for_all(meeting_duration)
 
-for interval in free_intervals:
-        print(f"{interval[0]} - {interval[1]}")
+# PRINTS FREE TIME INTERVALS FOR ALL
+# for person_schedule_key, intervals in free_time.items():
+#         person_name = person_schedule_key.replace("_Schedule", '')
+#         print(f"Free Time Intervals for {person_name}:")
+#
+#         for interval in intervals:
+#                 print(f"  - {interval[0]} to {interval[1]}")
+#
+#         print()
+
+# for interval in free_time:
+#         print(f"{interval[0]} - {interval[1]}")
 
 
 
