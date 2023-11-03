@@ -25,7 +25,7 @@ Just two entries [login, logout]
 Duration of the meeting It outputs a list of list containing intervals of time when all members are available for a meeting for the minimum duration of the meeting required.
 
 
-An analogy for the question:
+## An analogy for the question:
 Assume you and your group members provide your schedules and daily availability. The goal is to find a time slot when all of you are free for a meeting, considering the provided schedules and the minimum duration required for the meeting.
 
 
