@@ -1,0 +1,33 @@
+inputs: busyschedule, workingPeriod, Duration
+
+start with working period, keep the latest start time, and the earliest stop
+
+freetime = range(startTime, Endtime, duration)
+
+for person in schedules:
+    for block in person:
+        remove each block of time from freetime.
+return freetime
+
+Actually, some thoughts...
+
+Since it has to be read from a file, (O(n)), It would be prudent to just loop through it once
+    manipulating the data at each loop. Something like:
+
+    Open the file.
+    Get the raw data from the file. broke into lines.
+    close the file.
+    initialize the combined_schedule set().
+    loop through each line:
+        split the line at '=' will give two halfs, (except the duration), var_name, and var_value
+        the value gets eval'd.
+        if var_name is schedule: # value = [[ '7:00', '8:30'],  ['12:00', '13:00'],  ['16:00', '18:00']]
+            <ExpandTheRange> # i.e. [ '7:00', '8:30'] --> [7:00, 7:30, 8:00, 830]
+            add the expanded range to combined_schedule if its not in there.
+        if var_name is DailyAct:
+            check current DailyAct if start time is later or stop time earlier keep it.
+        if var name is duration:
+            # here we know that all the schedules are in and we have the last DailyAct, so wrap everything up.
+            
+
+

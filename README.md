@@ -1,10 +1,10 @@
 # scheduler
 
-*Project* *1*: *Implementing* Algorithm*
+*Project* *1*: *Implementing* *Algorithm*
 *Fall* *2023*   *CPSC* *335.01* - *Algorithm* *Engineering*
 *Instructor: Divyansh Mohan Rao* 
 
-##Abstract
+## Abstract
 Develop a pseudocode for an algorithm; analyze your pseudocode mathematically; implement the code for the algorithm of your choice; test your implementation; and describe your results.
 The Problem:  Matching Group Schedules
 The group schedule matching takes two or more arrays as input. The arrays represent slots that are already booked and the login/logout time of group members. It outputs an array containing intervals of time when all members are available for a meeting for a minimum duration expected.
@@ -25,7 +25,7 @@ Just two entries [login, logout]
 Duration of the meeting It outputs a list of list containing intervals of time when all members are available for a meeting for the minimum duration of the meeting required.
 
 
-An analogy for the question:
+## An analogy for the question:
 Assume you and your group members provide your schedules and daily availability. The goal is to find a time slot when all of you are free for a meeting, considering the provided schedules and the minimum duration required for the meeting.
 
 
