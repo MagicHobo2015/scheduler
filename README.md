@@ -1,5 +1,11 @@
 # scheduler
 
+## Setup Instructions:
+    In order to run you need <= python 3.x. Then place the file project1_starter.py in the same
+    directory as input.txt. Then all you need to do is run the command:
+    `python3 project1_starter.py`
+
+
 *Project* *1*: *Implementing* *Algorithm*
 *Fall* *2023*   *CPSC* *335.01* - *Algorithm* *Engineering*
 *Instructor: Divyansh Mohan Rao* 

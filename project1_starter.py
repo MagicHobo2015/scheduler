@@ -124,8 +124,13 @@ class Scheduler():
         self.schedules = []
         self.dailyAct = [[0, "0"], [2359, "23:59"]]
         
-        print(f'Results For test Case {self.caseNumber}: \t\t\t\t\t\t \n\n {results} \n')
+        print(f'Results For test Case {self.caseNumber}:\n\n {results} \n')
         print("-" * 80)
+        with open('output.txt', 'a') as f:
+            f.write(f'Results For test Case {self.caseNumber}:\n\n {results} \n')
+            f.write("-" * 80)
+            f.close()
+            
         self.caseNumber += 1
 
 # Driver Code
